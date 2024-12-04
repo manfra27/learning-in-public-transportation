@@ -1,0 +1,45 @@
+.App {
+  height: auto;
+  min-height: 100vh;
+  width: 100vm;
+  text-align: center;
+  background-color: rgb(26, 26, 26);
+  color: white;
+}
+
+.body {
+  text-align: left;
+}
+
+.footer {
+  margin-bottom: 0px;
+  position: fixed;
+  background-color: rgb(43, 43, 43);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  bottom: 0px;
+  display: flex;
+}
+
+.directory-buttons {
+  font-weight: bolder;
+  color: white;
+  background-color: transparent;
+  border-width: 0;
+}
+.directory-buttons-active {
+  font-weight: 100;
+  color: white;
+  background-color: transparent;
+  border-width: 0;
+}
+
+.guide {
+  padding: 20px;
+  overflow: hidden;
+  padding-bottom: 150px;
+}
+
+
