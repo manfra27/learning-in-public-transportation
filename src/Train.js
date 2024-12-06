@@ -5,28 +5,47 @@ const mapTopicsAndEntries = (db) => {
         topicName: topic.topicName,
         entries: topic.entries.map((entry) => ({
             id: entry.id,
+            term: entry.term,
+            explanation: entry.explanation,
             question: entry.question,
+            answerType: entry.answerType,
             options: entry.options,
-            correctAnswer: entry.correctAnswer,
-            inputType: entry.inputType,
-            deepExplanation: entry.deepExplanation,
-            references: entry.references,
         })),
     }));
 };
 
-const ToggleItem = ({ label, value }) => {
-    const [showValue, setShowValue] = useState(false);
+const ToggleItem = ({ id, term, explanation, question, answerTyep, options, trainingMode }) => {
+    const [Resolve, setResolve] = useState(false);
 
     return (
-        <div onClick={() => setShowValue(!showValue)} className="item">
-            <div className="item-question">PS C:\{">"} {label}</div>
-            <div className="item-answer">{showValue ? value : ""}</div>
+        <div onClick={() => setResolve(!Resolve)} className="item">
+
+            {trainingMode === "explain term" ? (
+                <div className="item-question">t: {term}</div>
+            ) : (
+                <div className="item-question">e: {explanation}</div>
+            )}
+
+            {Resolve && trainingMode === "explain term" ? (
+                <div className="item-answer">e: {explanation}</div>
+            ) : (
+                ""
+            )}
+
+            {Resolve && trainingMode === "find term" ? (
+                <div className="item-answer">t: {term}</div>
+            ) : (
+                ""
+            )}
+
         </div>
+
+
     )
+
 };
 
-const Train = ({ selectedTopics, db }) => {
+const Train = ({ selectedTopics, db, trainingMode }) => {
     const mappedData = mapTopicsAndEntries(db).filter((topic) =>
         selectedTopics.includes(topic.topicName)
     );
@@ -43,9 +62,13 @@ const Train = ({ selectedTopics, db }) => {
                 <ul>
                     {shuffledEntries.map((entry) => (
                         <ToggleItem
-                            key={entry.id}
-                            label={entry.question}
-                            value={entry.correctAnswer}
+                            id={entry.id}
+                            term={entry.term}
+                            explanation={entry.explanation}
+                            question={entry.question}
+                            answerTypes={entry.answerTypes}
+                            options={entry.options}
+                            trainingMode={trainingMode}
                         />
                     ))}
                 </ul>

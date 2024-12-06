@@ -1,0 +1,33 @@
+
+
+
+Inapp documentation
+
+UML
+actual: {topicName, entries {id, term, explanation}}
+future: {topicName, entries {id, term, explanation, question, answerType, options {}}}
+
+Dictionary
+topicName       name of a topic like Git
+entries         collections of entries for a single topicName
+term            the command, key or term that shall be learned
+explanation     the explanation aspect of an entry
+question        the question aspect of an entry
+answerType      conditional rendering of answer like boolean, string, multichoice for an entry
+options         selectable options for answer type multichoice and boolean.
+
+todos: 
+> change actual datastructure to future
+> datastructure and setting based conditional rendering of item
+> > Show content only if not null or ""
+> > If no options then show term
+> > If no question then show explanation
+> add MIT copyright .. reserved...& email?
+> track and gamify progress scoped to single session
+> training modes
+> > repeat (5) entries untill all correct.
+> > explain term | find term
+> update data
+> > add file types
+> > update git commands
+

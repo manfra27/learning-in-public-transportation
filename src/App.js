@@ -10,6 +10,12 @@ import Guide from './Guide';
 
 function App() {
   const [selectedTopics, setSelectedTopics] = useState([]);
+  const modes = ["explain term", "find term"];
+  const [trainingMode, setTrainingMode] = useState("explain key");
+
+  const handleModeSelection = (mode) => {
+    setTrainingMode(mode);
+  };
 
   const toggleTopicSelection = (topicName) => {
     setSelectedTopics((prev) =>
@@ -19,16 +25,23 @@ function App() {
     );
   };
 
-  const [selectedDirectory, setSelectedDirector] = useState("train");
+  const [selectedDirectory, setSelectedDirector] = useState("setting");
   const renderContent = () => {
     switch (selectedDirectory) {
       case "train":
-        return <Train selectedTopics={selectedTopics} db={db} />;
+        return <Train
+          selectedTopics={selectedTopics}
+          db={db}
+          trainingMode={trainingMode}
+        />;
       case "setting":
         return <Settings
           topics={db.map((topic) => topic.topicName)}
           selectedTopics={selectedTopics}
           toggleTopicSelection={toggleTopicSelection}
+          modes={modes}
+          handleModeSelection={handleModeSelection}
+          trainingMode={trainingMode}
         />;
       case "guide":
         return <Guide />;
