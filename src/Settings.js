@@ -10,7 +10,7 @@ const Settings = ({
 }) => {
     return (
         <div className="settings">
-            <h3>select mode</h3>
+            <h3>select mode HORSZ DA GANSTA</h3>
             <ul>
                 {modes.map((mode) => (
                     <li
