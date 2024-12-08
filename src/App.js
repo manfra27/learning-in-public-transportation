@@ -22,7 +22,7 @@ function App() {
     );
   };
 
-  const [selectedDirectory, setSelectedDirector] = useState("setting");
+  const [selectedDirectory, setSelectedDirectory] = useState("setting");
   const renderContent = () => {
     if (selectedDirectory === "train") {
       return (
@@ -61,7 +61,7 @@ function App() {
             className={selectedDirectory === "train"
               ? "directory-buttons-active"
               : "directory-buttons"}
-            onClick={() => setSelectedDirector("train")}
+            onClick={() => setSelectedDirectory("train")}
           >
             train
           </button>
@@ -69,7 +69,7 @@ function App() {
             className={selectedDirectory === "setting"
               ? "directory-buttons-active"
               : "directory-buttons"}
-            onClick={() => setSelectedDirector("setting")}
+            onClick={() => setSelectedDirectory("setting")}
           >
             setting
           </button>
@@ -77,7 +77,7 @@ function App() {
             className={selectedDirectory === "guide"
               ? "directory-buttons-active"
               : "directory-buttons"}
-            onClick={() => setSelectedDirector("guide")}
+            onClick={() => setSelectedDirectory("guide")}
           >
             guide
           </button>
