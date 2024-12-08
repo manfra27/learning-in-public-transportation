@@ -23,7 +23,7 @@ function App() {
   };
 
   const [selectedDirectory, setSelectedDirectory] = useState("setting");
-  const renderContent = (selectedTopics, db, trainingMode) => {
+  const renderContent = () => {
     if (selectedDirectory === "train") {
       return (
         <Train
