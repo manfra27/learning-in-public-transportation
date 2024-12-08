@@ -15,7 +15,7 @@ const mapTopicsAndEntries = (db) => {
 };
 
 const ToggleItem = (
-  { id, term, explanation, question, answerTyep, options, trainingMode },
+  { id, term, explanation, question, answerType, options, trainingMode },
 ) => {
   const [Resolve, setResolve] = useState(false);
 
