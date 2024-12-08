@@ -1,947 +1,1129 @@
-
-
-
+// last id = 281
 
 export const db = [
-    {
-        topicName: "Common java methods",
-        entries: [
-            {
-                "id": 1,
-                "term": "string.charAt(index):",
-                "explanation": "Returns the character at a specific index",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 2,
-                "term": "string.length():",
-                "explanation": "Returns the length of the string",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 3,
-                "term": "string.substring(start, end):",
-                "explanation": "Extracts a portion of the string",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 4,
-                "term": "string1.equals(string2):",
-                "explanation": "Compares two strings for equality",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 5,
-                "term": "string.toLowerCase():",
-                "explanation": "Converts the string to lowercase",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 6,
-                "term": "string.toUpperCase():",
-                "explanation": "Converts the string to uppercase",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 7,
-                "term": "string.trim():",
-                "explanation": "Removes leading and trailing whitespace",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 8,
-                "term": "string.replace(oldChar, newChar):",
-                "explanation": "Replaces characters in the string",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 9,
-                "term": "int number = (int) doubleValue:",
-                "explanation": "Manually converts a larger type to a smaller type",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 10,
-                "term": "double largerType = intValue:",
-                "explanation": "Automatically converts a smaller type to a larger type",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 11,
-                "term": "Integer.parseInt(string):",
-                "explanation": "Converts a string to an integer",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 12,
-                "term": "Integer.valueOf(intValue):",
-                "explanation": "Converts a primitive to a wrapper type",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 13,
-                "term": "Integer.toString(intValue):",
-                "explanation": "Converts a primitive to a string",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 14,
-                "term": "Math.abs(value):",
-                "explanation": "Returns the absolute value",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 15,
-                "term": "Math.sqrt(value):",
-                "explanation": "Returns the square root of a number",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 16,
-                "term": "Math.pow(base, exponent):",
-                "explanation": "Returns the value of base raised to the power of exponent",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 17,
-                "term": "Math.max(num1, num2):",
-                "explanation": "Returns the larger of two numbers",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 18,
-                "term": "Math.min(num1, num2):",
-                "explanation": "Returns the smaller of two numbers",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 19,
-                "term": "Math.random():",
-                "explanation": "Returns a random number between 0.0 and 1.0",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 20,
-                "term": "Math.round(value):",
-                "explanation": "Rounds a decimal value to the nearest integer",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 21,
-                "term": "array.length:",
-                "explanation": "Returns the size of the array",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 22,
-                "term": "Arrays.sort(array):",
-                "explanation": "Sorts the elements of the array",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 23,
-                "term": "Arrays.binarySearch(array, key):",
-                "explanation": "Searches for a key in a sorted array",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 24,
-                "term": "Arrays.copyOf(array, newSize):",
-                "explanation": "Copies an array to a new array with a specified size",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 25,
-                "term": "Arrays.toString(array):",
-                "explanation": "Returns a string representation of the array",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 26,
-                "term": "Arrays.fill(array, value):",
-                "explanation": "Fills an array with a specific value",
-                "question": "",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 27,
-                "term": "Arrays.equals(array1, array2):",
-                "explanation": "Compares two arrays for equality",
-                "question": "",
-                "answerType": "",
-                "options": []
-            }
-        ],
-    },
-    {
-        topicName: "Command Line Utilities",
-        entries: [
-            {
-                "id": 28,
-                "term": "mvn:",
-                "explanation": "To manage Java projects with Maven.",
-                "question": "Which tool is commonly used to manage and build Java projects?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 29,
-                "term": "npm:",
-                "explanation": "To manage JavaScript packages and dependencies.",
-                "question": "What is the default package manager for Node.js?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 30,
-                "term": "gradle:",
-                "explanation": "To build and manage software projects, often Java-based.",
-                "question": "Which build tool is known for its flexibility and often used for Java projects?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 31,
-                "term": "pip:",
-                "explanation": "To manage Python packages and libraries.",
-                "question": "What tool is used to install and manage Python packages?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 32,
-                "term": "composer:",
-                "explanation": "To manage PHP project dependencies.",
-                "question": "Which tool is used to manage dependencies in PHP projects?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 33,
-                "term": "gem:",
-                "explanation": "To manage Ruby packages (gems).",
-                "question": "What is the name of the tool for managing Ruby libraries?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 34,
-                "term": "yarn:",
-                "explanation": "To manage JavaScript dependencies, similar to npm.",
-                "question": "What is an alternative package manager to npm for JavaScript?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 35,
-                "term": "cargo:",
-                "explanation": "To manage Rust packages and projects.",
-                "question": "Which tool is used to manage Rust projects and dependencies?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 36,
-                "term": "go:",
-                "explanation": "To manage Go modules and dependencies.",
-                "question": "What tool is used to manage Go modules and packages?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 37,
-                "term": "brew:",
-                "explanation": "To manage software packages on macOS.",
-                "question": "What is the popular package manager for macOS?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 38,
-                "term": "docker:",
-                "explanation": "To manage containerized applications.",
-                "question": "Which tool is used to create, deploy, and manage containers?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 39,
-                "term": "kubectl:",
-                "explanation": "To manage Kubernetes clusters and resources.",
-                "question": "What command-line tool is used to interact with Kubernetes clusters?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 40,
-                "term": "terraform:",
-                "explanation": "To manage infrastructure as code across clouds.",
-                "question": "Which tool is used for managing infrastructure as code across different cloud platforms?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 41,
-                "term": "ansible:",
-                "explanation": "To automate IT tasks and manage configurations.",
-                "question": "What tool is commonly used for IT automation and configuration management?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 42,
-                "term": "vagrant:",
-                "explanation": "To manage virtual development environments.",
-                "question": "Which tool is used to manage virtual environments for development?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 43,
-                "term": "make:",
-                "explanation": "To automate build processes in software development.",
-                "question": "Which classic tool automates build processes based on Makefiles?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 44,
-                "term": "npx:",
-                "explanation": "To run Node.js packages without installing them globally.",
-                "question": "Which Node.js tool lets you run packages without global installation?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 45,
-                "term": "git:",
-                "explanation": "To manage version control for source code.",
-                "question": "What tool is widely used for version control in software development?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 46,
-                "term": "ssh:",
-                "explanation": "To connect securely to remote systems.",
-                "question": "What protocol is used for securely connecting to remote machines?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 47,
-                "term": "curl:",
-                "explanation": "To transfer data from or to a server using various protocols.",
-                "question": "Which command-line tool is used to transfer data from or to servers?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 48,
-                "term": "wget:",
-                "explanation": "To download files from the web (alternative to curl).",
-                "question": "What tool is commonly used to download files from the web?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 49,
-                "term": "zsh/bash:",
-                "explanation": "Shells for interacting with the operating system.",
-                "question": "What are examples of popular command-line shells?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 50,
-                "term": "rsync:",
-                "explanation": "To synchronize files between systems.",
-                "question": "Which tool is used to sync files across systems or directories?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 51,
-                "term": "ffmpeg:",
-                "explanation": "To manipulate and convert multimedia files (audio/video).",
-                "question": "What tool is used to process and convert audio/video files?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 52,
-                "term": "tmux:",
-                "explanation": "To manage terminal sessions and split panes.",
-                "question": "Which tool helps manage multiple terminal sessions?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 53,
-                "term": "htop:",
-                "explanation": "To monitor system resource usage interactively.",
-                "question": "What is a popular tool for interactively monitoring system resources?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 54,
-                "term": "jq:",
-                "explanation": "To parse and manipulate JSON data from the command line.",
-                "question": "Which command-line tool is used to process JSON data?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 55,
-                "term": "aws/az/gcloud:",
-                "explanation": "CLI tools for managing AWS, Azure, and Google Cloud resources.",
-                "question": "What are examples of CLI tools for managing cloud resources on AWS, Azure, and Google Cloud?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 56,
-                "term": "python/node/ruby:",
-                "explanation": "Interpreters for running respective programming languages directly.",
-                "question": "Which interpreters are used to run Python, Node.js, or Ruby code?",
-                "answerType": "",
-                "options": []
-            }
-        ]
-    },
-    {
-        topicName: "Git",
-        entries: [
-            {
-                "id": 57,
-                "term": "File logs",
-                "explanation": "git log -p <file>",
-                "question": "How can you view the commit history of a specific file, including changes made?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 58,
-                "term": "Differences",
-                "explanation": "git diff",
-                "question": "Which command is used to view changes between commits or the working directory?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 59,
-                "term": "Stash changes",
-                "explanation": "git stash",
-                "question": "How can you temporarily save uncommitted changes for later use?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 60,
-                "term": "Apply stashed changes",
-                "explanation": "git stash apply",
-                "question": "How can you reapply stashed changes to the working directory?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 61,
-                "term": "Reset to specific commit",
-                "explanation": "git reset --hard <commit-hash>",
-                "question": "Which command resets the repository to a specific commit, discarding changes?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 62,
-                "term": "Revert a commit",
-                "explanation": "git revert <commit-hash>",
-                "question": "How do you create a new commit that undoes a specific commit?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 63,
-                "term": "Fetch changes of repo",
-                "explanation": "git fetch",
-                "question": "Which command downloads changes from the remote repository without merging them?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 64,
-                "term": "Pull changes of repo",
-                "explanation": "git pull",
-                "question": "How can you download and merge changes from the remote repository?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 65,
-                "term": "Push changes to repo",
-                "explanation": "git push origin <branch-name>",
-                "question": "How do you upload local changes to a specific branch on the remote repository?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 66,
-                "term": "Delete branch",
-                "explanation": "git branch -d <branch-name>",
-                "question": "What command is used to delete a branch locally?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 67,
-                "term": "Merge branch",
-                "explanation": "git merge <branch-name>",
-                "question": "Which command is used to merge another branch into the current branch?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 68,
-                "term": "Create and switch branch",
-                "explanation": "git checkout -b <branch-name>",
-                "question": "What command allows you to create and switch to a new branch?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 69,
-                "term": "Switch branch",
-                "explanation": "git checkout <branch-name>",
-                "question": "How can you switch to a different branch in your repository?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 70,
-                "term": "Create new branch",
-                "explanation": "git branch <branch-name>",
-                "question": "Which command creates a new branch in your repository?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 71,
-                "term": "View commit history",
-                "explanation": "git log",
-                "question": "What command shows the commit history of the repository?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 72,
-                "term": "Commit changes",
-                "explanation": "git commit -m 'commit message'",
-                "question": "How can you save staged changes with a descriptive message?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 73,
-                "term": "Stage changes (specific file)",
-                "explanation": "git add <file>",
-                "question": "Which command stages a specific file for the next commit?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 74,
-                "term": "Stage all changes",
-                "explanation": "git add .",
-                "question": "How do you stage all changes in the working directory for the next commit?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 75,
-                "term": "View repo status",
-                "explanation": "git status",
-                "question": "What command shows the current status of your repository, including staged and unstaged changes?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 76,
-                "term": "Clone repository",
-                "explanation": "git clone <repository-url>",
-                "question": "How can you create a local copy of a remote repository?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 77,
-                "term": "Initialize repository",
-                "explanation": "git init",
-                "question": "Which command initializes a new Git repository?",
-                "answerType": "",
-                "options": []
-            }
-        ]
-    },
+  {
+    topicName: "deno",
+    entries: [
+      {
+        "id": 267,
+        "term": "deno run <file>",
+        "explanation":
+          "Executes the specified script file (TypeScript or JavaScript).",
+        "question": "What command executes a Deno script file?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 268,
+        "term": "deno test [options]",
+        "explanation":
+          "Runs test files with the .test.ts or .test.js extensions.",
+        "question": "How do you run tests in Deno?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 269,
+        "term": "deno lint [files...]",
+        "explanation":
+          "Lints the specified files to enforce code quality and style.",
+        "question": "What command lints files in Deno?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 270,
+        "term": "deno fmt [files...]",
+        "explanation": "Formats files according to Deno's style guide.",
+        "question": "How do you format files in Deno?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 271,
+        "term": "deno compile <file>",
+        "explanation": "Compiles a script into a standalone executable.",
+        "question": "What command compiles a Deno script into an executable?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 272,
+        "term": "deno run --allow-net <file>",
+        "explanation": "Allows network access for the script.",
+        "question": "What command allows network access for a Deno script?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 273,
+        "term": "deno run --allow-read <file>",
+        "explanation": "Allows read access to the file system.",
+        "question": "What command allows file system read access in Deno?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 274,
+        "term": "deno run --allow-write <file>",
+        "explanation": "Allows write access to the file system.",
+        "question": "What command allows file system write access in Deno?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 275,
+        "term": "deno run --allow-env <file>",
+        "explanation": "Allows access to environment variables.",
+        "question": "How do you allow environment variable access in Deno?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 276,
+        "term": "deno cache <file>",
+        "explanation": "Downloads and caches all dependencies locally.",
+        "question": "What command caches dependencies in Deno?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 277,
+        "term": "deno info [file]",
+        "explanation": "Displays information about a script or the Deno cache.",
+        "question": "How do you get information about a Deno script or cache?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 278,
+        "term": "deno install [options] <file>",
+        "explanation": "Installs a script globally as an executable.",
+        "question": "How do you install a Deno script globally?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 279,
+        "term": "deno doc [module]",
+        "explanation": "Generates documentation for a module.",
+        "question": "What command generates documentation for a Deno module?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 280,
+        "term": "deno upgrade",
+        "explanation": "Upgrades Deno to the latest version.",
+        "question": "What command upgrades Deno to the latest version?",
+        "answerType": "text",
+        "options": [],
+      },
+      {
+        "id": 281,
+        "term": "deno help [command]",
+        "explanation": "Displays help information for a specific command.",
+        "question": "How do you get help for a specific Deno command?",
+        "answerType": "text",
+        "options": [],
+      },
+    ],
+  },
 
+  {
+    topicName: "Common java methods",
+    entries: [
+      {
+        "id": 1,
+        "term": "string.charAt(index):",
+        "explanation": "Returns the character at a specific index",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 2,
+        "term": "string.length():",
+        "explanation": "Returns the length of the string",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 3,
+        "term": "string.substring(start, end):",
+        "explanation": "Extracts a portion of the string",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 4,
+        "term": "string1.equals(string2):",
+        "explanation": "Compares two strings for equality",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 5,
+        "term": "string.toLowerCase():",
+        "explanation": "Converts the string to lowercase",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 6,
+        "term": "string.toUpperCase():",
+        "explanation": "Converts the string to uppercase",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 7,
+        "term": "string.trim():",
+        "explanation": "Removes leading and trailing whitespace",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 8,
+        "term": "string.replace(oldChar, newChar):",
+        "explanation": "Replaces characters in the string",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 9,
+        "term": "int number = (int) doubleValue:",
+        "explanation": "Manually converts a larger type to a smaller type",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 10,
+        "term": "double largerType = intValue:",
+        "explanation": "Automatically converts a smaller type to a larger type",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 11,
+        "term": "Integer.parseInt(string):",
+        "explanation": "Converts a string to an integer",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 12,
+        "term": "Integer.valueOf(intValue):",
+        "explanation": "Converts a primitive to a wrapper type",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 13,
+        "term": "Integer.toString(intValue):",
+        "explanation": "Converts a primitive to a string",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 14,
+        "term": "Math.abs(value):",
+        "explanation": "Returns the absolute value",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 15,
+        "term": "Math.sqrt(value):",
+        "explanation": "Returns the square root of a number",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 16,
+        "term": "Math.pow(base, exponent):",
+        "explanation":
+          "Returns the value of base raised to the power of exponent",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 17,
+        "term": "Math.max(num1, num2):",
+        "explanation": "Returns the larger of two numbers",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 18,
+        "term": "Math.min(num1, num2):",
+        "explanation": "Returns the smaller of two numbers",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 19,
+        "term": "Math.random():",
+        "explanation": "Returns a random number between 0.0 and 1.0",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 20,
+        "term": "Math.round(value):",
+        "explanation": "Rounds a decimal value to the nearest integer",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 21,
+        "term": "array.length:",
+        "explanation": "Returns the size of the array",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 22,
+        "term": "Arrays.sort(array):",
+        "explanation": "Sorts the elements of the array",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 23,
+        "term": "Arrays.binarySearch(array, key):",
+        "explanation": "Searches for a key in a sorted array",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 24,
+        "term": "Arrays.copyOf(array, newSize):",
+        "explanation": "Copies an array to a new array with a specified size",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 25,
+        "term": "Arrays.toString(array):",
+        "explanation": "Returns a string representation of the array",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 26,
+        "term": "Arrays.fill(array, value):",
+        "explanation": "Fills an array with a specific value",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 27,
+        "term": "Arrays.equals(array1, array2):",
+        "explanation": "Compares two arrays for equality",
+        "question": "",
+        "answerType": "",
+        "options": [],
+      },
+    ],
+  },
+  {
+    topicName: "Command Line Utilities",
+    entries: [
+      {
+        "id": 28,
+        "term": "mvn:",
+        "explanation": "To manage Java projects with Maven.",
+        "question":
+          "Which tool is commonly used to manage and build Java projects?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 29,
+        "term": "npm:",
+        "explanation": "To manage JavaScript packages and dependencies.",
+        "question": "What is the default package manager for Node.js?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 30,
+        "term": "gradle:",
+        "explanation":
+          "To build and manage software projects, often Java-based.",
+        "question":
+          "Which build tool is known for its flexibility and often used for Java projects?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 31,
+        "term": "pip:",
+        "explanation": "To manage Python packages and libraries.",
+        "question": "What tool is used to install and manage Python packages?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 32,
+        "term": "composer:",
+        "explanation": "To manage PHP project dependencies.",
+        "question":
+          "Which tool is used to manage dependencies in PHP projects?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 33,
+        "term": "gem:",
+        "explanation": "To manage Ruby packages (gems).",
+        "question": "What is the name of the tool for managing Ruby libraries?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 34,
+        "term": "yarn:",
+        "explanation": "To manage JavaScript dependencies, similar to npm.",
+        "question":
+          "What is an alternative package manager to npm for JavaScript?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 35,
+        "term": "cargo:",
+        "explanation": "To manage Rust packages and projects.",
+        "question":
+          "Which tool is used to manage Rust projects and dependencies?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 36,
+        "term": "go:",
+        "explanation": "To manage Go modules and dependencies.",
+        "question": "What tool is used to manage Go modules and packages?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 37,
+        "term": "brew:",
+        "explanation": "To manage software packages on macOS.",
+        "question": "What is the popular package manager for macOS?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 38,
+        "term": "docker:",
+        "explanation": "To manage containerized applications.",
+        "question":
+          "Which tool is used to create, deploy, and manage containers?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 39,
+        "term": "kubectl:",
+        "explanation": "To manage Kubernetes clusters and resources.",
+        "question":
+          "What command-line tool is used to interact with Kubernetes clusters?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 40,
+        "term": "terraform:",
+        "explanation": "To manage infrastructure as code across clouds.",
+        "question":
+          "Which tool is used for managing infrastructure as code across different cloud platforms?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 41,
+        "term": "ansible:",
+        "explanation": "To automate IT tasks and manage configurations.",
+        "question":
+          "What tool is commonly used for IT automation and configuration management?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 42,
+        "term": "vagrant:",
+        "explanation": "To manage virtual development environments.",
+        "question":
+          "Which tool is used to manage virtual environments for development?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 43,
+        "term": "make:",
+        "explanation": "To automate build processes in software development.",
+        "question":
+          "Which classic tool automates build processes based on Makefiles?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 44,
+        "term": "npx:",
+        "explanation":
+          "To run Node.js packages without installing them globally.",
+        "question":
+          "Which Node.js tool lets you run packages without global installation?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 45,
+        "term": "git:",
+        "explanation": "To manage version control for source code.",
+        "question":
+          "What tool is widely used for version control in software development?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 46,
+        "term": "ssh:",
+        "explanation": "To connect securely to remote systems.",
+        "question":
+          "What protocol is used for securely connecting to remote machines?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 47,
+        "term": "curl:",
+        "explanation":
+          "To transfer data from or to a server using various protocols.",
+        "question":
+          "Which command-line tool is used to transfer data from or to servers?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 48,
+        "term": "wget:",
+        "explanation": "To download files from the web (alternative to curl).",
+        "question":
+          "What tool is commonly used to download files from the web?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 49,
+        "term": "zsh/bash:",
+        "explanation": "Shells for interacting with the operating system.",
+        "question": "What are examples of popular command-line shells?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 50,
+        "term": "rsync:",
+        "explanation": "To synchronize files between systems.",
+        "question":
+          "Which tool is used to sync files across systems or directories?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 51,
+        "term": "ffmpeg:",
+        "explanation":
+          "To manipulate and convert multimedia files (audio/video).",
+        "question":
+          "What tool is used to process and convert audio/video files?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 52,
+        "term": "tmux:",
+        "explanation": "To manage terminal sessions and split panes.",
+        "question": "Which tool helps manage multiple terminal sessions?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 53,
+        "term": "htop:",
+        "explanation": "To monitor system resource usage interactively.",
+        "question":
+          "What is a popular tool for interactively monitoring system resources?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 54,
+        "term": "jq:",
+        "explanation":
+          "To parse and manipulate JSON data from the command line.",
+        "question": "Which command-line tool is used to process JSON data?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 55,
+        "term": "aws/az/gcloud:",
+        "explanation":
+          "CLI tools for managing AWS, Azure, and Google Cloud resources.",
+        "question":
+          "What are examples of CLI tools for managing cloud resources on AWS, Azure, and Google Cloud?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 56,
+        "term": "python/node/ruby:",
+        "explanation":
+          "Interpreters for running respective programming languages directly.",
+        "question":
+          "Which interpreters are used to run Python, Node.js, or Ruby code?",
+        "answerType": "",
+        "options": [],
+      },
+    ],
+  },
+  {
+    topicName: "Git",
+    entries: [
+      {
+        "id": 57,
+        "term": "File logs",
+        "explanation": "git log -p <file>",
+        "question":
+          "How can you view the commit history of a specific file, including changes made?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 58,
+        "term": "Differences",
+        "explanation": "git diff",
+        "question":
+          "Which command is used to view changes between commits or the working directory?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 59,
+        "term": "Stash changes",
+        "explanation": "git stash",
+        "question":
+          "How can you temporarily save uncommitted changes for later use?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 60,
+        "term": "Apply stashed changes",
+        "explanation": "git stash apply",
+        "question":
+          "How can you reapply stashed changes to the working directory?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 61,
+        "term": "Reset to specific commit",
+        "explanation": "git reset --hard <commit-hash>",
+        "question":
+          "Which command resets the repository to a specific commit, discarding changes?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 62,
+        "term": "Revert a commit",
+        "explanation": "git revert <commit-hash>",
+        "question":
+          "How do you create a new commit that undoes a specific commit?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 63,
+        "term": "Fetch changes of repo",
+        "explanation": "git fetch",
+        "question":
+          "Which command downloads changes from the remote repository without merging them?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 64,
+        "term": "Pull changes of repo",
+        "explanation": "git pull",
+        "question":
+          "How can you download and merge changes from the remote repository?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 65,
+        "term": "Push changes to repo",
+        "explanation": "git push origin <branch-name>",
+        "question":
+          "How do you upload local changes to a specific branch on the remote repository?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 66,
+        "term": "Delete branch",
+        "explanation": "git branch -d <branch-name>",
+        "question": "What command is used to delete a branch locally?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 67,
+        "term": "Merge branch",
+        "explanation": "git merge <branch-name>",
+        "question":
+          "Which command is used to merge another branch into the current branch?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 68,
+        "term": "Create and switch branch",
+        "explanation": "git checkout -b <branch-name>",
+        "question":
+          "What command allows you to create and switch to a new branch?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 69,
+        "term": "Switch branch",
+        "explanation": "git checkout <branch-name>",
+        "question":
+          "How can you switch to a different branch in your repository?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 70,
+        "term": "Create new branch",
+        "explanation": "git branch <branch-name>",
+        "question": "Which command creates a new branch in your repository?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 71,
+        "term": "View commit history",
+        "explanation": "git log",
+        "question": "What command shows the commit history of the repository?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 72,
+        "term": "Commit changes",
+        "explanation": "git commit -m 'commit message'",
+        "question":
+          "How can you save staged changes with a descriptive message?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 73,
+        "term": "Stage changes (specific file)",
+        "explanation": "git add <file>",
+        "question": "Which command stages a specific file for the next commit?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 74,
+        "term": "Stage all changes",
+        "explanation": "git add .",
+        "question":
+          "How do you stage all changes in the working directory for the next commit?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 75,
+        "term": "View repo status",
+        "explanation": "git status",
+        "question":
+          "What command shows the current status of your repository, including staged and unstaged changes?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 76,
+        "term": "Clone repository",
+        "explanation": "git clone <repository-url>",
+        "question": "How can you create a local copy of a remote repository?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 77,
+        "term": "Initialize repository",
+        "explanation": "git init",
+        "question": "Which command initializes a new Git repository?",
+        "answerType": "",
+        "options": [],
+      },
+    ],
+  },
 
-    {
-        topicName: "Shell/Bash/Kernel",
-        entries: [
-            {
-                "id": 78,
-                "term": "Clear terminal",
-                "explanation": "clear",
-                "question": "What command clears the terminal screen?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 79,
-                "term": "Install something",
-                "explanation": "install",
-                "question": "Which command is used to install software or packages?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 80,
-                "term": "Super user do",
-                "explanation": "sudo",
-                "question": "What command is used to execute tasks with superuser privileges?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 81,
-                "term": "What's working on a port",
-                "explanation": "sudo lsof -i :portnr",
-                "question": "How do you check what process is running on a specific port?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 82,
-                "term": "Stop what's working on this port",
-                "explanation": "kill -9 PID",
-                "question": "How do you stop a process running on a specific port?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 83,
-                "term": "Kill a process",
-                "explanation": "kill <PID>",
-                "question": "What command terminates a process using its process ID?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 84,
-                "term": "View running processes",
-                "explanation": "ps aux",
-                "question": "Which command lists all running processes on the system?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 85,
-                "term": "System information",
-                "explanation": "uname -a",
-                "question": "How can you view detailed system information, including the kernel version?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 86,
-                "term": "Kernel messages",
-                "explanation": "dmesg",
-                "question": "Which command displays kernel-related messages?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 87,
-                "term": "Disk usage",
-                "explanation": "df -h",
-                "question": "How can you view the disk usage of your system in a human-readable format?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 88,
-                "term": "Memory usage",
-                "explanation": "free -h",
-                "question": "Which command displays memory usage in a human-readable format?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 89,
-                "term": "Processes and resource usage",
-                "explanation": "top",
-                "question": "How can you monitor system processes and resource usage interactively?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 90,
-                "term": "Display memory usage",
-                "explanation": "vm_start",
-                "question": "What command provides information about memory usage on your system?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 91,
-                "term": "List files",
-                "explanation": "ls",
-                "question": "How do you list files in the current directory?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 92,
-                "term": "Change directory",
-                "explanation": "cd <directory>",
-                "question": "What command allows you to navigate to a different directory?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 93,
-                "term": "Show current directory",
-                "explanation": "pwd",
-                "question": "How can you view the full path of the current working directory?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 94,
-                "term": "Create a new directory",
-                "explanation": "mkdir",
-                "question": "Which command creates a new directory?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 95,
-                "term": "Remove a file or directory",
-                "explanation": "rm",
-                "question": "What command is used to delete files or directories?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 96,
-                "term": "Copy files or directories",
-                "explanation": "cp",
-                "question": "Which command copies files or directories to a specified location?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 97,
-                "term": "Move and rename file or directory",
-                "explanation": "mv",
-                "question": "What command is used to move or rename a file or directory?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 98,
-                "term": "Create new file",
-                "explanation": "touch",
-                "question": "How do you create an empty file in the current directory?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 99,
-                "term": "Open files or applications",
-                "explanation": "open",
-                "question": "What command opens a file or application from the terminal?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 100,
-                "term": "Change file permissions",
-                "explanation": "chmod <permissions> <file>",
-                "question": "Which command modifies the permissions of a file?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 101,
-                "term": "Change file ownership",
-                "explanation": "chown",
-                "question": "How do you change the ownership of a file or directory?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 102,
-                "term": "Access or modify user defaults",
-                "explanation": "defaults",
-                "question": "Which command is used to access or modify user defaults?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 103,
-                "term": "Check connectivity",
-                "explanation": "ping <hostname or IP>",
-                "question": "What command tests network connectivity to a specific host?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 104,
-                "term": "Download file",
-                "explanation": "curl -O <url>",
-                "question": "How do you download a file from a URL using curl?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 105,
-                "term": "Get headers only",
-                "explanation": "curl -I <url>",
-                "question": "What curl command retrieves only the HTTP headers of a URL?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 106,
-                "term": "Transfer file",
-                "explanation": "wget <url>",
-                "question": "Which command downloads files from the internet to your system?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 107,
-                "term": "Show IP configuration",
-                "explanation": "ifconfig (or ip a on newer systems)",
-                "question": "What command displays network interface configurations?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 108,
-                "term": "Open remote shell",
-                "explanation": "ssh user@<hostname>",
-                "question": "Which command starts a remote shell session with another host?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 109,
-                "term": "View network connections",
-                "explanation": "netstat -tuln",
-                "question": "What command lists active network connections?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 110,
-                "term": "Traceroute",
-                "explanation": "traceroute <hostname>",
-                "question": "How can you trace the route packets take to a host?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 111,
-                "term": "DNS lookup",
-                "explanation": "nslookup <hostname>",
-                "question": "What command performs a DNS lookup for a given hostname?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 112,
-                "term": "Show active TCP connections",
-                "explanation": "ss -t",
-                "question": "How do you display active TCP connections on your system?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 113,
-                "term": "Encryption",
-                "explanation": "echo -n password | base64",
-                "question": "Which command encodes a string using Base64?",
-                "answerType": "",
-                "options": []
-            },
-            {
-                "id": 114,
-                "term": "Decryption",
-                "explanation": "base64 -D",
-                "question": "What command decodes a Base64-encoded string?",
-                "answerType": "",
-                "options": []
-            }
-        ]
-    },
-]
-
-
-
-
+  {
+    topicName: "Shell/Bash/Kernel",
+    entries: [
+      {
+        "id": 78,
+        "term": "Clear terminal",
+        "explanation": "clear",
+        "question": "What command clears the terminal screen?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 79,
+        "term": "Install something",
+        "explanation": "install",
+        "question": "Which command is used to install software or packages?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 80,
+        "term": "Super user do",
+        "explanation": "sudo",
+        "question":
+          "What command is used to execute tasks with superuser privileges?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 81,
+        "term": "What's working on a port",
+        "explanation": "sudo lsof -i :portnr",
+        "question":
+          "How do you check what process is running on a specific port?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 82,
+        "term": "Stop what's working on this port",
+        "explanation": "kill -9 PID",
+        "question": "How do you stop a process running on a specific port?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 83,
+        "term": "Kill a process",
+        "explanation": "kill <PID>",
+        "question": "What command terminates a process using its process ID?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 84,
+        "term": "View running processes",
+        "explanation": "ps aux",
+        "question": "Which command lists all running processes on the system?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 85,
+        "term": "System information",
+        "explanation": "uname -a",
+        "question":
+          "How can you view detailed system information, including the kernel version?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 86,
+        "term": "Kernel messages",
+        "explanation": "dmesg",
+        "question": "Which command displays kernel-related messages?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 87,
+        "term": "Disk usage",
+        "explanation": "df -h",
+        "question":
+          "How can you view the disk usage of your system in a human-readable format?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 88,
+        "term": "Memory usage",
+        "explanation": "free -h",
+        "question":
+          "Which command displays memory usage in a human-readable format?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 89,
+        "term": "Processes and resource usage",
+        "explanation": "top",
+        "question":
+          "How can you monitor system processes and resource usage interactively?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 90,
+        "term": "Display memory usage",
+        "explanation": "vm_start",
+        "question":
+          "What command provides information about memory usage on your system?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 91,
+        "term": "List files",
+        "explanation": "ls",
+        "question": "How do you list files in the current directory?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 92,
+        "term": "Change directory",
+        "explanation": "cd <directory>",
+        "question":
+          "What command allows you to navigate to a different directory?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 93,
+        "term": "Show current directory",
+        "explanation": "pwd",
+        "question":
+          "How can you view the full path of the current working directory?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 94,
+        "term": "Create a new directory",
+        "explanation": "mkdir",
+        "question": "Which command creates a new directory?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 95,
+        "term": "Remove a file or directory",
+        "explanation": "rm",
+        "question": "What command is used to delete files or directories?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 96,
+        "term": "Copy files or directories",
+        "explanation": "cp",
+        "question":
+          "Which command copies files or directories to a specified location?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 97,
+        "term": "Move and rename file or directory",
+        "explanation": "mv",
+        "question":
+          "What command is used to move or rename a file or directory?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 98,
+        "term": "Create new file",
+        "explanation": "touch",
+        "question": "How do you create an empty file in the current directory?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 99,
+        "term": "Open files or applications",
+        "explanation": "open",
+        "question":
+          "What command opens a file or application from the terminal?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 100,
+        "term": "Change file permissions",
+        "explanation": "chmod <permissions> <file>",
+        "question": "Which command modifies the permissions of a file?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 101,
+        "term": "Change file ownership",
+        "explanation": "chown",
+        "question": "How do you change the ownership of a file or directory?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 102,
+        "term": "Access or modify user defaults",
+        "explanation": "defaults",
+        "question": "Which command is used to access or modify user defaults?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 103,
+        "term": "Check connectivity",
+        "explanation": "ping <hostname or IP>",
+        "question":
+          "What command tests network connectivity to a specific host?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 104,
+        "term": "Download file",
+        "explanation": "curl -O <url>",
+        "question": "How do you download a file from a URL using curl?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 105,
+        "term": "Get headers only",
+        "explanation": "curl -I <url>",
+        "question":
+          "What curl command retrieves only the HTTP headers of a URL?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 106,
+        "term": "Transfer file",
+        "explanation": "wget <url>",
+        "question":
+          "Which command downloads files from the internet to your system?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 107,
+        "term": "Show IP configuration",
+        "explanation": "ifconfig (or ip a on newer systems)",
+        "question": "What command displays network interface configurations?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 108,
+        "term": "Open remote shell",
+        "explanation": "ssh user@<hostname>",
+        "question":
+          "Which command starts a remote shell session with another host?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 109,
+        "term": "View network connections",
+        "explanation": "netstat -tuln",
+        "question": "What command lists active network connections?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 110,
+        "term": "Traceroute",
+        "explanation": "traceroute <hostname>",
+        "question": "How can you trace the route packets take to a host?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 111,
+        "term": "DNS lookup",
+        "explanation": "nslookup <hostname>",
+        "question": "What command performs a DNS lookup for a given hostname?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 112,
+        "term": "Show active TCP connections",
+        "explanation": "ss -t",
+        "question": "How do you display active TCP connections on your system?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 113,
+        "term": "Encryption",
+        "explanation": "echo -n password | base64",
+        "question": "Which command encodes a string using Base64?",
+        "answerType": "",
+        "options": [],
+      },
+      {
+        "id": 114,
+        "term": "Decryption",
+        "explanation": "base64 -D",
+        "question": "What command decodes a Base64-encoded string?",
+        "answerType": "",
+        "options": [],
+      },
+    ],
+  },
+];
 
 /*
 
