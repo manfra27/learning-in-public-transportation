@@ -56,6 +56,7 @@ const Train = ({ selectedTopics, db, trainingMode }) => {
           <ul>
             {shuffledEntries.map((entry) => (
               <ToggleItem
+                key={entry.id}
                 id={entry.id}
                 term={entry.term}
                 explanation={entry.explanation}
