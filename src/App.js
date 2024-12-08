@@ -27,26 +27,25 @@ function App() {
 
   const [selectedDirectory, setSelectedDirector] = useState("setting");
   const renderContent = () => {
-    switch (selectedDirectory) {
-      case "train":
-        return <Train
-          selectedTopics={selectedTopics}
-          db={db}
-          trainingMode={trainingMode}
-        />
-      case "setting":
-        return <Settings
-          topics={db.map((topic) => topic.topicName)}
-          selectedTopics={selectedTopics}
-          toggleTopicSelection={toggleTopicSelection}
-          modes={modes}
-          handleModeSelection={handleModeSelection}
-          trainingMode={trainingMode}
-        />
-      case "guide":
-        return <Guide />
-      default:
-        return <div>Select an option to see the content.</div>;
+    if (selectedDirectory === "train") {
+      return <Train
+        selectedTopics={selectedTopics}
+        db={db}
+        trainingMode={trainingMode}
+      />
+    }
+    if (selectedDirectory === "setting") {
+      return <Settings
+        topics={db.map((topic) => topic.topicName)}
+        selectedTopics={selectedTopics}
+        toggleTopicSelection={toggleTopicSelection}
+        modes={modes}
+        handleModeSelection={handleModeSelection}
+        trainingMode={trainingMode}
+      />
+    }
+    if (selectedDirectory === "guide") {
+      return <Guide />
     }
   };
 
