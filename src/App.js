@@ -33,7 +33,7 @@ function App() {
           selectedTopics={selectedTopics}
           db={db}
           trainingMode={trainingMode}
-        />;
+        />
       case "setting":
         return <Settings
           topics={db.map((topic) => topic.topicName)}
@@ -42,9 +42,9 @@ function App() {
           modes={modes}
           handleModeSelection={handleModeSelection}
           trainingMode={trainingMode}
-        />;
+        />
       case "guide":
-        return <Guide />;
+        return <Guide />
       default:
         return <div>Select an option to see the content.</div>;
     }
